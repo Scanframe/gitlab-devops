@@ -3,7 +3,8 @@ variables:
   # Output directory.
   SF_DIR_BIN_MINGW: "bin/win64"
   # Fixed directory the source root is mounted to.
-  SF_DIR_MOUNT_MINGW: "${BIND_DIR}/${CI_COMMIT_SHORT_SHA}-mingw"
+  #SF_DIR_MOUNT_MINGW: "${BIND_DIR}/${CI_COMMIT_SHORT_SHA}-mingw"
+  SF_DIR_MOUNT_MINGW: "."
 
 # Template to mount source root on a fixed directory path for Windows MinGW compiler.
 .tpl-bind-mingw:
