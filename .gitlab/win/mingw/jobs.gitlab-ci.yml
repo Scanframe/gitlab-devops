@@ -41,7 +41,7 @@ job-test-mingw:
   script:
     - !reference [.tpl-log-win-script,script]
     # Run the test which in Linux can have absolute path dependencies to dynamic libraries.
-    - '& ${SF_DIR_BIN_MINGW}\${SF_TEST_TARGET}.exe'
+    - '${SF_DIR_BIN_MINGW}/${SF_TEST_TARGET}.exe'
 
 job-deploy-mingw:
   extends: [.tpl-artifacts-mingw,.tpl-deploy]
