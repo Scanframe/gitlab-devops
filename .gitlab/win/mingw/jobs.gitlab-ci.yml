@@ -11,7 +11,7 @@ job-make-mingw:
   script:
     - !reference [.tpl-log-win-script,script]
     # Execute the build script to CMake the makefiles.
-    - '& ${SF_DIR_MOUNT_MINGW}\build.ps1 --clion -m .'
+    - '& ${SF_DIR_MOUNT_MINGW}/build.ps1 --clion -m .'
 
 job-build-mingw:
   extends: [.tpl-bind-mingw,.tpl-cache-mingw,.tpl-artifacts-mingw]

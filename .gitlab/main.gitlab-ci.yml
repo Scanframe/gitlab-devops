@@ -22,11 +22,11 @@ include:
     rules:
       - if: '$CI_COMMIT_BRANCH =~ /^.+-win-.+$/'
 
-workflow:
-  # Only run pipeline on protected branches.
-  rules:
-    # Rule boolean needs to be evaluated this way ?!
-    - if: '$CI_COMMIT_REF_PROTECTED == "true"'
+#workflow:
+#  # Only run pipeline on protected branches.
+#  rules:
+#    # Rule boolean needs to be evaluated this way ?!
+#    - if: '$CI_COMMIT_REF_PROTECTED == "true"'
 
 # Variables needed for this file.
 variables:
